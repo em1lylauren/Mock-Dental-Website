@@ -1,0 +1,311 @@
+<!--
+    Emily Hartz-Kuzmicz
+    job346
+    11350337
+    CMPT281
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2nd Avenue Dental</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Links the CSS stylesheet to the HTML doc -->
+    <link rel="stylesheet" type="text/css" href="STYLES/mainstylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="STYLES/bookingstylesheet.css" />
+
+    <!-- Links the JS script for form submissioin -->
+    <script src="JAVASCRIPT/submitbooking.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700;800&family=Spectral:wght@300;500&display=swap" rel="stylesheet">
+    
+</head>
+<body onload="javascript:formSubmit()">
+    <nav>
+
+        <div class="Logo">
+            <img src="ICONS/sitelogo.png" alt="website icon">
+            <h1>2ndAveDental</h1>
+        </div>
+
+        <ul class="NavList">
+            <li><a href="home.html" class="NavListItem"><h5>Home</h5></a></li>
+            <li><a href="aboutus.html" class="NavListItem"><h5>About</h5></a></li>
+            <li><a href="services.html" class="NavListItem"><h5>Services</h5></a></li>
+            <li><a href="contact.html" class="NavListItem"><h5>Contact Us</h5></a></li>
+            <li id="LargerNavItem"><a href="booking.html" class="NavListItem" id="NavReqAppt"><h5>Request Appointment</h5></a></li>
+        </ul>
+
+    </nav>
+
+    <div class="TitleBox">
+        <h1>Request An Appointment With Us</h1>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+
+    <div class="ApptRequestBox">
+
+        <div class="ApptRequestImage">
+            <img src="IMAGES/MISC IMAGES/apptrequest.jpg" alt="a variety of dental tools laid out in a circle">
+        </div>
+
+        <div class="ApptRequestForm">
+
+            <form id="Form">
+
+            <h2>Make an Appointment Request</h2>
+
+            <!-- First & last name -->
+            <div class="FormDiv">
+
+                <div class="FormColumn">
+                    <label for="fname"><p>First Name</p></label>
+                    <input type="text" id="fname" name="fname" placeholder="First Name"> 
+                </div>
+
+                <div class="FormColumn">
+                    <label for="lname"><p>Last Name</p></label>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                </div>
+
+            </div>
+
+            <!-- Phone number & returning patient (yes/no)-->
+            <div class="FormDiv">
+
+                <div class="FormColumn">
+                    <label for="lname"><p>Phone Number</p></label>
+                    <input type="phonenum" id="phonenum" name="phonenum"  placeholder="Phone Number">
+                </div>
+                
+                <div class="FormColumn">
+                    <p>Returning Patient?</p>
+
+                    <div class="FormRow">
+                        <input type="radio" id="returning_patientyes" name="returning_patient" value="yes" checked="checked">
+                        <label for="yes"><p>Yes</p></label>
+                    </div>
+
+                    <div class="FormRow">
+                        <input type="radio" id="returning_patientno" name="returning_patient" value="no">
+                        <label for="no"><p>No</p></label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Email & preferred method of contact -->
+            <div class="FormDiv">
+
+                <div class="FormColumn">
+                    <label for="email"><p>Email</p></label>
+                    <input type="email" id="email" name="email"  placeholder="Email">
+                </div>
+                
+                <div class="FormColumn">
+                    <p>Preferred Method of Contact?</p>
+
+                    <div class="FormRow">
+                        <input type="radio" id="contact_methodphone" name="contact_method" value="phone" checked="checked">
+                        <label for="phone"><p>Phone</p></label>
+                    </div>
+
+                    <div class="FormRow">
+                        <input type="radio" id="contact_methodemail" name="contact_method" value="email">
+                        <label for="email"><p>Email</p></label>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <!-- Day in week, time in day (dropdown) -->
+            <div class="FormDiv" id="DayTime">
+
+                <div class="FormColumn">
+                    <label for="day"><p>What Day of the Week?</p></label>
+                    <select id="day" name="day">
+                        <option value="monday"><p>Monday</p></option>
+                        <option value="tuesday"><p>Tuesday</p></option>
+                        <option value="wednesday"><p>Wednesday</p></option>
+                        <option value="thursday"><p>Thursday</p></option>
+                        <option value="friday"><p>Friday</p></option>
+                    </select>
+                </div>
+
+                <div class="FormColumn">
+                    <label for="time"><p>What Time in the Day?</p></label>
+                    <select id="time" name="time">
+                    <option value="9"><p>9:00 AM</p></option>
+                    <option value="9.5"><p>9:30 AM</p></option>
+                    <option value="10"><p>10:00 AM</p></option>
+                    <option value="10.5"><p>10:30 AM</p></option>
+                    <option value="11"><p>11:00 AM</p></option>
+                    <option value="11.5"><p>11:30 AM</p></option>
+                    <option value="12"><p>12:00 PM</p></option>
+                    <option value="12.5"><p>12:30 PM</p></option>
+                    <option value="1"><p>1:00 PM</p></option>
+                    <option value="1.5"><p>1:30 PM</p></option>
+                    <option value="2"><p>2:00 PM</p></option>
+                    <option value="2.5"><p>2:30 PM</p></option>
+                    <option value="3"><p>3:00 PM</p></option>
+                    <option value="3.5"><p>3:30 PM</p></option>
+                    <option value="4"><p>4:00 PM</p></option>
+                    <option value="4.5"><p>4:30 PM</p></option>
+                    <option value="5"><p>5:00 PM</p></option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- Text area for special requests -->
+            <div class="OtherTextBox">
+
+                <div class="FormColumn">
+                    <p>How can we help you?</p>
+                    <textarea id="message" name="message" rows="10" cols="50" placeholder="Enter message here..."></textarea>
+                </div>
+                
+            </div>
+
+            <!-- Submit button -->
+            <button class="SubmitButton" type="submit"><p>Submit Request</p></button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="GoodHandsBox">
+
+        <div class="GoodHands">
+
+            <div class="GoodHandsText">
+                <h1>You're in Good Hands</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <div class="GoodHandsButton">
+                <h3>Got any questions?</h3>
+                <a href="contact.html"><button class="ReqApptButton" type="button"><h3>Contact Us</h3></button></a> 
+            </div>
+
+        </div>
+
+        <div class="GoodHandsImage">
+            <img src="IMAGES/MISC IMAGES/goodhands.jpg" alt="patient smiles at dentist">
+        </div>
+
+    </div>
+
+    <div class="FooterBox">
+
+        <div class="InfoBox">
+
+            <div class="Info">
+
+                <div class="InfoIconExtraSpace">
+                    <img id="LocationIcon" src="ICONS/locationpin.png" alt="location pin icon">
+                    <div class="InfoText">
+                        <h5>123 & 45 Example Avenue, Saskatoon, SK, SJS 123</h5>
+                    </div>
+                </div>
+
+                <div class="InfoIcon">
+                    <img id="FooterPhoneIcon" src="ICONS/phonecircle.png" alt="phone icon">
+                    <div class="InfoText">
+                        <ul>
+                        <h5>Call Us</h5>
+                        <h5><b>306-123-4567</b></h5>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="InfoIcon">
+                    <img id="EmailIcon" src="ICONS/email.png" alt="email icon">
+                    <div class="InfoText">
+                        <ul>
+                        <h5>Email Us</h5>
+                        <h5><b>fakeexample@mailsite.com</b></h5>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="SocialLinks">
+                <a href="https://www.facebook.com">
+                    <img id="FBIcon" src="ICONS/facebook.png" alt="facebook icon">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img id="INSIcon" src="ICONS/instagram.png" alt="instagram icon">
+                </a>
+                <a href="https://www.twitter.com">
+                    <img id="TWTIcon" src="ICONS/twitter.png" alt="twitter icon">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="OfficeHoursBox">
+
+            <h2><b>Office Hours</b></h2>
+
+            <div class="HoursBox">
+
+                <div>
+                    <h5><b>Monday</b></h5>
+                    <p>9:00am - 5:00pm</p>
+                </div>
+
+                <div>
+                    <h5><b>Tuesday</b></h5>
+                    <p>9:00am - 5:00pm</p>
+                </div>
+
+                <div>
+                    <h5><b>Wednesday</b></h5>
+                    <p>9:00am - 5:00pm</p>
+                </div>
+
+                <div>
+                    <h5><b>Thursday</b></h5>
+                    <p>9:00am - 5:00pm</p>
+                </div>
+
+                <div>
+                    <h5><b>Friday</b></h5>
+                    <p>9:00am - 5:00pm</p>
+                </div>
+
+                <div>
+                    <h5><b>Saturday</b></h5>
+                    <p>Closed</p>
+                </div>
+
+                <div>
+                    <h5><b>Sunday</b></h5>
+                    <p>Closed</p>
+                </div>
+
+                <div>
+                    <h5><b>Holidays</b></h5>
+                    <p>Closed</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

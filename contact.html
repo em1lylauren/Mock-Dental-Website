@@ -1,0 +1,232 @@
+<!--
+    Emily Hartz-Kuzmicz
+    job346
+    11350337
+    CMPT281
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2nd Avenue Dental</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Links the CSS stylesheet to the HTML doc -->
+    <link rel="stylesheet" type="text/css" href="STYLES/mainstylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="STYLES/contactstylesheet.css" />
+
+    <!-- Links the JS script for form submissioin -->
+    <script src="JAVASCRIPT/submitcontact.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500;700;800&family=Spectral:wght@300;500&display=swap" rel="stylesheet">
+    
+</head>
+<body onload="javascript:formSubmit()">
+    <nav>
+
+        <div class="Logo">
+            <img src="ICONS/sitelogo.png" alt="website icon">
+            <h1>2ndAveDental</h1>
+        </div>
+
+        <ul class="NavList">
+            <li><a href="home.html" class="NavListItem"><h5>Home</h5></a></li>
+            <li><a href="aboutus.html" class="NavListItem"><h5>About</h5></a></li>
+            <li><a href="services.html" class="NavListItem"><h5>Services</h5></a></li>
+            <li><a href="contact.html" class="NavListItem"><h5>Contact Us</h5></a></li>
+            <li id="LargerNavItem"><a href="booking.html" class="NavListItem" id="NavReqAppt"><h5>Request Appointment</h5></a></li>
+        </ul>
+
+    </nav>
+
+    
+    <div class="TitleBox">
+        <h1>Contact Us</h1>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+
+    <div class="ContactReqBox">
+
+        <div class="ContactReqForm">
+
+            <form id="Form">
+
+            <h2>Send Us a Message</h2>
+
+            <!-- First & last name -->
+            <div class="FormDiv">
+
+                <div class="FormColumnShort">
+                    <label for="fname"><p>First Name</p></label>
+                    <input type="text" id="fname" name="fname" placeholder="First Name"> 
+                </div>
+
+                <div class="FormColumnShort">
+                    <label for="lname"><p>Last Name</p></label>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                </div>
+
+            </div>
+
+            <!-- Phone number -->
+            <div class="FormDiv">
+
+                <div class="FormColumn">
+                    <label for="phonenum"><p>Phone Number</p></label>
+                    <input type="phonenum" id="phonenum" name="phonenum" placeholder="Phone Number">
+                </div>
+
+            </div>
+
+            <!-- Email -->
+            <div class="FormDiv">
+
+                <div class="FormColumn">
+                    <label for="email"><p>Email</p></label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+
+            </div>
+
+            <!-- Subject -->
+            <div class="FormDiv">
+
+                <div class="FormColumn">
+                    <label for="subject"><p>Subject</p></label>
+                    <input type="subject" id="subject" name="subject" placeholder="Subject">
+                </div>
+            
+            </div>
+
+
+            <!-- Text area for special requests -->
+            <div class="OtherTextBox">
+
+                <div class="FormColumn">
+                    <p>How can we help you?</p>
+                    <textarea id="message" name="message" rows="10" cols="50" placeholder="Enter message here..."></textarea>
+                </div>
+                
+            </div>
+
+            <!-- Submit button -->
+            <button class="SubmitButton" type="submit"><p>Submit Request</p></button>
+
+            </form>
+
+            <div class="ContactReqImage">
+                <img src="IMAGES/MISC IMAGES/contactus.jpg" alt="female dentist examines a patient's teeth">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="FooterBox">
+
+        <div class="InfoBox">
+
+            <div class="Info">
+
+                <div class="InfoIconExtraSpace">
+                    <img id="LocationIcon" src="ICONS/locationpin.png" alt="location pin icon">
+                    <div class="InfoText">
+                        <h5>123 & 45 Example Avenue, Saskatoon, SK, SJS 123</h5>
+                    </div>
+                </div>
+
+                <div class="InfoIcon">
+                    <img id="FooterPhoneIcon" src="ICONS/phonecircle.png" alt="phone icon">
+                    <div class="InfoText">
+                        <ul>
+                        <h5>Call Us</h5>
+                        <h5><b>306-123-4567</b></h5>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="InfoIcon">
+                    <img id="EmailIcon" src="ICONS/email.png" alt="email icon">
+                    <div class="InfoText">
+                        <ul>
+                        <h5>Email Us</h5>
+                        <h5><b>fakeexample@mailsite.com</b></h5>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="SocialLinks">
+                <a href="https://www.facebook.com">
+                    <img id="FBIcon" src="ICONS/facebook.png" alt="facebook icon">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img id="INSIcon" src="ICONS/instagram.png" alt="instagram icon">
+                </a>
+                <a href="https://www.twitter.com">
+                    <img id="TWTIcon" src="ICONS/twitter.png" alt="twitter icon">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="OfficeHoursBox">
+
+            <h2><b>Office Hours</b></h2>
+
+            <div class="HoursBox">
+
+                <div>
+                    <h5><b>Monday</b></h5>
+                    <p>9:00am - 5:00pm</p>
+                </div>
+
+                <div>
+                    <h5><b>Tuesday</b></h5>
+                    <p>9:00am - 5:00pm</p>
+                </div>
+
+                <div>
+                    <h5><b>Wednesday</b></h5>
+                    <p>9:00am - 5:00pm</p>
+                </div>
+
+                <div>
+                    <h5><b>Thursday</b></h5>
+                    <p>9:00am - 5:00pm</p>
+                </div>
+
+                <div>
+                    <h5><b>Friday</b></h5>
+                    <p>9:00am - 5:00pm</p>
+                </div>
+
+                <div>
+                    <h5><b>Saturday</b></h5>
+                    <p>Closed</p>
+                </div>
+
+                <div>
+                    <h5><b>Sunday</b></h5>
+                    <p>Closed</p>
+                </div>
+
+                <div>
+                    <h5><b>Holidays</b></h5>
+                    <p>Closed</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
