@@ -1,0 +1,313 @@
+/*  Emily Hartz-Kuzmicz
+    job346
+    11350337
+    CMPT281
+*/
+
+/* TITLE SECTION  (Company Name & Carousel) */
+
+#TitleBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    gap: 5%;
+
+    background-color: var(--mainTertiaryColor);
+}
+
+.TitleText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+
+    width: 40%;
+
+    margin-left: 5%;
+
+    gap: 5%;
+}
+
+.TitleText h1 {
+    text-shadow: 0.07em 0.05em 0em var(--buttonColor);
+}
+
+.TitleContact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100%;
+
+    gap: 15%;
+}
+
+.TitleContact div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 3%;
+}
+
+#TitlePhoneIcon {
+    width: 7%;
+    height: 5%;
+}
+
+/* Carousel Items */
+
+.Carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+.CarouselRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 2%;
+}
+
+.CarouselRow a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    width: 5%;
+}
+
+.CarouselImg {
+    width: 70%;
+}
+
+.CarouselImg img {
+    width: 100%;
+    display: none;
+
+    box-shadow: 2px 2px 3px var(--shadowTertiaryColor);
+}
+
+.CarouselRow button {
+    width: 100%;
+
+    padding: 10%;
+}
+
+/* Fading animation when switching carousel image */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* ABOUT US SECTION */
+
+#AboutUsBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-top: 8%;
+    padding-bottom: 8%;
+
+    background-color: var(--mainTertiaryColor);
+
+    gap: 7%;
+}
+
+#AboutUsBox h1 {
+    text-shadow: 0.07em 0.05em 0em var(--buttonColor);
+}
+
+#AboutUsBox div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 40%;
+
+    margin-right: 0%;
+}
+
+#AboutUsBox img {
+    width: 30%;
+    height: 40%;
+
+    margin-left: 0%;
+
+    box-shadow: 2px 4px 4px var(--shadowColor);
+}
+
+/* OUR SERVICES SECTION */
+
+#ServiceTitleBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--mainSecondaryColor);
+
+    padding-top: 7%;
+    padding-bottom: 7%;
+
+    text-align: center;
+}
+
+#ServiceTitleBox p {
+    width: 60%;
+}
+
+#ServiceBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    background-color: var(--mainTertiaryColor);
+
+    gap: 3%;
+    
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.SingleServiceBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+
+    background-color: var(--textColor);
+
+    width: 30%;
+    margin-bottom: 3%;
+
+    transition: 0.4s;
+
+    padding: 1.5%;
+
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--textColor);
+
+    box-shadow: 2px 2px 4px var(--shadowColor);
+}
+
+.SingleServiceBox img {
+    width: 100%;
+    height: 70%;
+}
+
+.SingleServiceBox div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-bottom: 25px;
+}
+
+.SingleServiceBox a {
+    width: 40%;
+}
+
+.SingleServiceBox button {
+    background-color: var(--buttonColor);
+    border-color: var(--buttonColor);
+
+    width: 100%;
+}
+
+.SingleServiceBox:hover {
+    background-color: var(--buttonColorHover);
+    border-color: var(--buttonColorHover);
+}
+
+.SingleServiceBox:hover button {
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+}
+
+.SingleServiceBox:hover h4 {
+    color: var(--textColor);
+}
+
+.SingleServiceBox:hover button:hover {
+    background-color: var(--mainColorHover);
+    border-color: var(--mainColorHover);
+}
+
+/* CONTACT US SECTION */
+
+#ContactReqBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding-top: 6%;
+    padding-bottom: 6%;
+
+    background-color: var(--mainSecondaryColor);
+}
+
+.ContactReqTitle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    margin-left: 20%;
+    margin-right: 20%;
+
+    padding-bottom: 5%;
+
+    text-align: center;
+}
+
+.ContactReqButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    width: 60%;
+
+    margin-right: 9.5%;
+
+    gap: 15%;
+}

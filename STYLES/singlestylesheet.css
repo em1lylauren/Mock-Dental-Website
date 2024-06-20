@@ -1,0 +1,95 @@
+/*  Emily Hartz-Kuzmicz
+    job346
+    11350337
+    CMPT281
+*/
+
+/* SINGLE SERVICE */
+
+.ServiceBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    padding-top: 7%;
+    padding-bottom: 7%;
+
+    background-color: var(--mainTertiaryColor);
+
+    gap: 10%;
+}
+
+.ServiceText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-left: 7%;
+
+    width: 40%;
+}
+
+.ServiceImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    margin-right: 5%;
+
+    width: 40%;
+}
+
+.ServiceImage img {
+    width: 100%;
+
+    border-radius: 10%/15%;
+
+    box-shadow: 3px 3px 3px var(--shadowColor);
+}
+
+/* SINGLE BIO (For dentist) */
+
+.BioBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    padding-top: 7%;
+    padding-bottom: 7%;
+
+    background-color: var(--mainTertiaryColor);
+
+    gap: 7%;
+}
+
+.BioText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    width: 40%;
+}
+
+.BioImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    width: 30%;
+}
+
+.BioImage img {
+    width: 100%;
+
+    aspect-ratio: 1/1;
+
+    border-radius: 15%/15%;
+
+    box-shadow: 3px 3px 3px var(--shadowColor);
+}

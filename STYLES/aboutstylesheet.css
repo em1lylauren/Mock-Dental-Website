@@ -1,0 +1,201 @@
+/*  Emily Hartz-Kuzmicz
+    job346
+    11350337
+    CMPT281
+*/
+
+/* TITLE SECTION */
+
+.TitleBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+    padding-top: 13%;
+    padding-bottom: 13%;
+
+    background-image: url("../IMAGES/ABOUT IMAGES/titleimage2.jpg");
+    background-position: 100% 65%;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    box-shadow: 0px 2px 3px var(--shadowTertiaryColor);
+}
+
+.TitleBox h1 {
+    font-size: 3.5vw;
+
+    color: var(--textColor);
+    text-shadow: 0.08em 0.05em 0em var(--shadowColor);
+}
+
+/* BIO SECTION (Dentists) */
+
+.BioBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 10%;
+
+    background-color: var(--mainTertiaryColor);
+
+    padding-top: 10%;
+    padding-bottom: 4%;
+}
+
+.SingleBioBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 15%;
+
+    margin-bottom: 5%;
+
+    gap: 5%;
+
+}
+
+.SingleBioBox h2 {
+    font-size: 1.6vw;
+}
+
+.SingleBioBox a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 55%;
+}
+
+.SingleBioBox img {
+    width: 100%;
+    height: 60%;
+
+    box-shadow: 2px 4px 4px var(--shadowColor);
+}
+
+.SingleBioBox button {
+    background-color: var(--buttonColor);
+    border-color: var(--buttonColor);
+
+    padding-right: 15%;
+    padding-left: 15%;
+
+    width: 100%;
+}
+
+.SingleBioBox button:hover {
+    background-color: var(--buttonColorHover);
+    border-color: var(--buttonColorHover);
+}
+
+/* VALUES SECTION (Our Values) */
+
+.ValueBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 10%;
+
+    background-color: var(--mainTertiaryColor);
+
+    padding-left: 5%;
+}
+
+.ValueTitle {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+
+    margin-left: 15%;
+}
+
+.ValueTitle h1 {
+    text-shadow: 0.07em 0.05em 0em var(--buttonColor);
+}
+
+.ValueSingles {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 40%;
+
+    margin-left: 25%;
+
+    padding-bottom: 10%;
+
+}
+
+.ValueSingle {
+    display: flex;
+    justify-content: space-around;
+    align-items: first baseline;
+    flex-direction: row;
+
+    margin-top: 3%;
+
+    background-color: var(--tertiaryButtonColor);
+    color: var(--textColor);
+
+    border-style: solid;
+    border-color: var(--tertiaryButtonColor);
+    border-width: 2%;
+    border-radius: 10%/25%;
+
+    padding: 4%;
+
+    box-shadow: 2px 2px 4px var(--shadowColor);
+
+    margin-right: 25%;
+
+    transition: 0.6s ease;
+}
+
+.ValueSingle:hover {
+    background-color: var(--tertiaryButtonColorHover);
+    border-color: var(--tertiaryButtonColorHover);
+}
+
+.ValueIcon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    width: 25%;
+
+    margin-right: 5%;
+}
+
+.ValueIcon img {
+    width: 80%;
+    height: 80%;
+
+    filter: invert(1000%) brightness(200%);
+}
+
+.ValueText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* SPECIAL NAVBAR ADJUSTMENTS */
+
+nav {
+    box-shadow: 0px 2px 3px var(--shadowColor);
+}

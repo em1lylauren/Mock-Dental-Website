@@ -1,0 +1,208 @@
+/*  Emily Hartz-Kuzmicz
+    job346
+    11350337
+    CMPT281
+*/
+
+/* TITLE SECTION */
+
+.TitleBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+
+    background-color: var(--mainSecondaryColor);
+
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+.TitleBox p {
+    width: 40%;
+}
+
+/* FORM SECTION */
+
+.ContactReqBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    background-color: var(--mainTertiaryColor);
+
+    padding-top: 5%;
+    padding-bottom: 8%;
+
+    gap: 10%;
+}
+
+.ContactReqImage {
+    width: 35%;
+}
+
+.ContactReqImage img {
+    width: 100%;
+
+    box-shadow: 3px 3px 2px var(--shadowColor);
+}
+
+.ContactReqForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    gap: 5%;
+}
+
+#Form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 5%;
+
+    width: 35%;
+}
+
+.FormDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    gap: 5%;
+}
+
+.OtherTextBox {
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 2%;
+
+    margin-bottom: 2%;
+}
+
+.FormColumn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    line-height: 0%;
+
+    margin-bottom: 1%;
+
+    width: 100%;
+}
+
+.FormColumnShort {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    line-height: 2%;
+
+    margin-bottom: 2%;
+
+    width: 35%;
+}
+
+.FormRow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 5%;
+
+    width: 100%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form h2 {
+    text-shadow: 0.08em 0.06em 0em var(--buttonColor);
+}
+
+form p {
+    font-weight: 500;
+}
+
+textarea {
+    width: 100%;
+    padding: 2%;
+    margin: 1% 0;
+    box-sizing: border-box;
+
+    resize: none;
+
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    font-size: 1vw;
+
+    accent-color: var(--accentColor);
+}
+
+input {
+    width: 100%;
+    padding: 2%;
+    margin: 1% 0;
+    box-sizing: border-box;
+
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    font-size: 15px;
+
+    accent-color: var(--accentColor);
+}
+
+input[type=text] {
+    padding: 5%;
+}
+
+input[type=phonenum] {
+    width: 75%;
+}
+
+input[type=email] {
+    width: 75%;
+}
+
+input[type=subject] {
+    width: 100%;
+}
+
+::placeholder {
+    font-size: 1vw;
+}
+
+.SubmitButton {
+    align-self: flex-end;
+
+    margin-left: 73.6%;
+}

@@ -1,0 +1,168 @@
+/*  Emily Hartz-Kuzmicz
+    job346
+    11350337
+    CMPT281
+*/
+
+/* TITLE SECTION */
+
+#TitleBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+
+    background-color: var(--mainSecondaryColor);
+
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+#TitleBox p {
+    width: 45%;
+}
+
+/* SERVICES SECTION */
+
+#ServiceBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 10%;
+
+    background-color: var(--mainTertiaryColor);
+
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.SingleServiceBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+
+    width: 30%;
+    margin-bottom: 5%;
+
+    transition: 0.4s;
+
+    padding: 2%;
+
+    border-style: solid;
+    border-radius: 10px;
+
+    border-color: var(--textColor);
+    background-color: var(--textColor);
+
+    box-shadow: 4px 4px 4px var(--shadowTertiaryColor);
+}
+
+.SingleServiceBox div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-bottom: 5%;
+}
+
+.SingleServiceBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.SingleServiceBox a {
+    width: 50%;
+}
+
+.SingleServiceBox button {
+    background-color: var(--buttonColor);
+    border-color: var(--buttonColor);
+
+    width: 100%;
+}
+
+.SingleServiceBox:hover {
+    background-color: var(--mainSecondaryColor);
+    border-color: var(--mainSecondaryColor);
+}
+
+.SingleServiceBox:hover button {
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+}
+
+.SingleServiceBox:hover h4 {
+    color: white;
+}
+
+.SingleServiceBox:hover button:hover {
+    background-color: var(--mainColorHover);
+    border-color: var(--mainColorHover);
+}
+
+/* CHOOSE US SECTION ("Why Choose Us?") */
+
+#ChooseUsBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 5%;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    background-color: var(--mainSecondaryColor);
+}
+
+.ChooseUsText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 40%;
+}
+
+.ChooseUsText div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    gap: 10%;
+    margin-top: 2%;
+}
+
+.ChooseUsImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 30%;
+}
+
+.ChooseUsImage img {
+    width: 80%;
+    height: 100%;
+
+    box-shadow: 3px 3px 2px var(--shadowColor);
+}

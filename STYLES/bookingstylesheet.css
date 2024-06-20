@@ -1,0 +1,262 @@
+/*  Emily Hartz-Kuzmicz
+    job346
+    11350337
+    CMPT281
+*/
+
+/* TITLE SECTION */
+
+.TitleBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+
+    background-color: var(--mainSecondaryColor);
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.TitleBox p {
+    width: 40%;
+}
+
+/* APPOINTMENT REQUEST SECTION (Form & Image) */
+
+.ApptRequestBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    background-color: var(--mainTertiaryColor);
+
+    padding-left: 10%;
+    padding-bottom: 7%;
+    padding-top: 5%;
+
+    gap: 8%;
+}
+
+.ApptRequestImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 35%;
+}
+
+.ApptRequestImage img {
+    width: 100%;
+
+    border-radius: 8%/5%;
+    box-shadow: 2px 4px 4px var(--shadowColor);
+}
+
+.ApptRequestForm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    gap: 0%;
+
+    width: 50%;
+}
+
+#Form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    gap: 0%;
+}
+
+#Form h2 {
+    text-shadow: 0.08em 0.06em 0em var(--buttonColor);
+}
+
+.FormDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    gap: 10%;
+}
+
+.OtherTextBox {
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-bottom: 2%;
+}
+
+#DayTime {
+    gap: 14.5%;
+}
+
+.FormColumn p {
+    font-weight: 500;
+}
+
+.FormColumn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    line-height: 1%;
+}
+
+.FormRow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+/* FORM ELEMENTS */
+
+textarea {
+    width: 67%;
+    padding: 2%;
+    box-sizing: border-box;
+
+    resize: none;
+
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    font-size: 1vw;
+
+    accent-color: var(--accentColor);
+}
+
+input {
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    font-size: 1vw;
+
+    accent-color: var(--accentColor);
+}
+
+input[type=radio] {
+    padding: 0%;
+    margin: 0%;
+
+    width: 20%;
+}
+
+.SubmitButton {
+    margin-left: 45.5%;
+
+    font-weight: 500;
+}
+
+select {
+    width: 100%;
+
+    color: var(--mainColor);
+    padding: 5%;
+
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    font-size: 1vw;
+
+    background-color: var(--textColor);
+    border-color: var(--accentColor);
+}
+
+/* GOOD HANDS SECTION ("You're In Good Hands") */
+
+.GoodHandsBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 10%;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    background-color: var(--mainSecondaryColor);
+}
+
+.GoodHands {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-left: 10%;
+
+    width: 50%;
+}
+
+.GoodHandsImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-right: 10%;
+
+    width: 35%;
+}
+
+.GoodHandsImage img {
+    width: 100%;
+
+    box-shadow: 2px 4px 4px var(--shadowColor);
+}
+
+.GoodHandsText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.GoodHandsText p {
+    margin-left: 5%;
+}
+
+.GoodHandsButton {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    margin-left: 5%;
+    gap: 5%;
+}
